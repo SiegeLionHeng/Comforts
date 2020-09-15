@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,SpUsage">
+
+    <data>
+
+        <import type="com.outrank.global.utils.Tools" />
+
+        <import type="com.outrank.global.global.Const" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_attention_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_15"
+            android:gravity="center"
+            android:text="关注动态"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/dp_20"
+            android:typeface="@{Tools.fonts(Const.FONT.FONT_TWO_STROKES_TYPEFACE)}" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/tv_send_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:drawableStart="@drawable/ic_photo"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="发动态"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/dp_15" />
+
+    </RelativeLayout>
+</layout>

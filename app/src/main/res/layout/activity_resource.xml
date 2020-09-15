@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.outrank.global.view.Topbar
+            android:id="@+id/topbar"
+            style="@style/MatchWrap.TopBar"
+            app:topbarTitleText="搜资源" />
+
+        <com.outrank.global.base.refresh.CommonRefreshView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.outrank.global.base.refresh.CommonRefreshView>
+
+    </LinearLayout>
+</layout>

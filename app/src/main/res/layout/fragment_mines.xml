@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,SpUsage">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.outrank.global.view.pulltozoom.PullToZoomScrollViewEx
+            android:id="@+id/ptzsv_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+        <com.outrank.global.view.Topbar
+            android:id="@+id/tb_per_center"
+            style="@style/MatchWrap.TopBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:statusBarAsTopbarBg="true"
+            app:topbarLeftMode="more"
+            app:topbarLeftTextColor="@color/transparent"
+            app:topbarLeftType="text"
+            app:topbarRightImage="@drawable/ic_setting"
+            app:topbarRightType="img" />
+
+    </RelativeLayout>
+</layout>

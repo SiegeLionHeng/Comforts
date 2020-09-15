@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,SpUsage">
+
+    <data>
+
+        <import type="com.outrank.global.utils.ScreenUtils" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@{ScreenUtils.getStatusHeight()}">
+
+
+        <com.outrank.global.base.refresh.CommonRefreshView
+            android:id="@+id/srl_plaza_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_plaza_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+
+        </com.outrank.global.base.refresh.CommonRefreshView>
+
+
+        <FrameLayout
+            android:id="@+id/fra_content"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+    </RelativeLayout>
+
+
+</layout>

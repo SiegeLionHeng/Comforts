@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,SpUsage">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <com.outrank.global.base.refresh.CommonRefreshView
+            android:id="@+id/srl_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nsv_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never">
+
+                <RelativeLayout
+                    android:id="@+id/rl_root_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/shape_video_bg" />
+
+                    <TextView
+                        android:id="@+id/tv_find_res"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:text="找资源"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_25" />
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_find_res"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginEnd="@dimen/dp_15"
+                        android:gravity="end"
+                        android:lineSpacingExtra="@dimen/dp_2"
+                        android:text="@string/str_video_wallparper"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_12" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_30"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:src="@drawable/ic_video_icon" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tv_content"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@drawable/shape_video_content_bg"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_15"
+                            android:background="@drawable/shape_video_content_bg" />
+
+                        <net.lucode.hackware.magicindicator.MagicIndicator
+                            android:id="@+id/message_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginBottom="@dimen/dp_15"
+                            android:background="@color/white" />
+
+                        <FrameLayout
+                            android:id="@+id/fra_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </com.outrank.global.base.refresh.CommonRefreshView>
+
+
+        <com.outrank.global.view.Topbar
+            android:id="@+id/topbar"
+            style="@style/MatchWrap.TopBar"
+            app:statusBarAsTopbarBg="true"
+            app:statusBarBg="@color/transparent"
+            app:topbarBgColor="@color/transparent"
+            app:topbarLeftImage="@drawable/ic_black"
+            app:topbarLeftMode="back"
+            app:topbarTextColor="@color/transparent"
+            app:topbarTitleText="找资源" />
+
+    </RelativeLayout>
+</layout>

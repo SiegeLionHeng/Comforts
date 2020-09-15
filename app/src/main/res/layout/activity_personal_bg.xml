@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.outrank.global.view.Topbar
+            android:id="@+id/tb_per_center"
+            style="@style/MatchWrap.TopBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:statusBarBg="@color/white"
+            app:topbarBgColor="@color/white"
+            app:topbarTitleText="个性背景" />
+
+
+        <com.outrank.global.base.refresh.CommonRefreshView
+            android:id="@+id/srl_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+
+        </com.outrank.global.base.refresh.CommonRefreshView>
+    </LinearLayout>
+</layout>

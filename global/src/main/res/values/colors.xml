@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1fcfa1</color>
+    <color name="colorPrimaryDark">#19bf94</color>
+    <color name="colorAccent">#1fcfa1</color>
+    <color name="status_bar">#ff2952</color>
+
+
+    <!-- 状态栏的颜色和TitleBar的颜色相同 -->
+    <color name="gray_text">#adadad</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="divider">#E5E5E5</color>
+    <color name="input_underline">#eeeeee</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_white">#EFEFEF</color>
+    <color name="colorGrey3">#333333</color>
+    <color name="colorGrey6">#666666</color>
+    <color name="colorGrey9">#999999</color>
+    <color name="color_f5f6f8">#f5f6f8</color>
+    <color name="logout_pressed">#a8a8a8</color>
+    <color name="black_text">#333333</color>
+    <color name="share_title">#626262</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="color_dddfe1">#dddfe1</color>
+    <color name="main">#ff9f4e</color>
+    <color name="base_blue">#0ea0ff</color>
+    <color name="base_blue_40">#660ea0ff</color>
+
+
+    <color name="line">#ececed</color>
+
+    <color name="background_light">#ff9e4f</color>
+    <color name="background_weight">#ff8771</color>
+
+    <color name="color_141414">#141414</color>
+    <color name="color_d8d8d8">#d8d8d8</color>
+
+    <color name="toast_bg">#cc000000</color>
+
+    <!--整体色值-->
+    <color name="c8">#F5F5F5</color>
+    <color name="c10">#f3f3f3</color>
+    <color name="c13">#ffffff</color>
+    <!--警示按钮-->
+    <color name="hei_7f">#7f7f7f</color>
+    <color name="hui_6">#666666</color>
+
+    <color name="black_alpha_40">#66000000</color>
+    <color name="black_alpha_10">#22000000</color>
+    <color name="black_alpha_60">#99000000</color>
+
+    <color name="color_F7A44C">#F7A44C</color>
+    <color name="color_666">#666666</color>
+    <color name="text_999">#999999</color>
+</resources>

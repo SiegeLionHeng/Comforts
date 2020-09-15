@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Topbar">
+        <!--是否需要延伸到状态栏-->
+        <attr name="topbarIsExtendStatusBar" format="boolean"/>
+        <!--状态栏是否使用标题栏的背景-->
+        <attr name="statusBarAsTopbarBg" format="boolean"/>
+
+        <attr name="topbarTextColor" format="color|reference"/>
+        <attr name="topbarLeftTextColor" format="color|reference"/>
+        <attr name="topbarRightTextColor" format="color|reference"/>
+
+        <!--topbar整体背景色-->
+        <attr name="topbarBgColor" format="color"/>
+        <attr name="topbarBgDrawable" format="reference"/>
+        <!--状态栏背景-->
+        <attr name="statusBarBg" format="reference"/>
+
+       <!-- &lt;!&ndash;左侧文字大小&ndash;&gt;
+        <attr name="topbarLeftTextSzie" format="dimension"/>
+        &lt;!&ndash;中间标题文字大小&ndash;&gt;
+        <attr name="topbarTitleTextSzie" format="dimension"/>
+        &lt;!&ndash;右侧文字大小&ndash;&gt;
+        <attr name="topbarRightTextSzie" format="dimension"/>
+
+        &lt;!&ndash;左侧文字颜色&ndash;&gt;
+        <attr name="topbarLeftTextColor" format="reference|color"/>
+        &lt;!&ndash;中间标题文字颜色&ndash;&gt;
+        <attr name="topbarTitleTextColor" format="reference|color"/>
+        &lt;!&ndash;右侧文字颜色&ndash;&gt;
+        <attr name="topbarRightTextColor" format="reference|color"/>-->
+
+        <!--左侧控件的操作模式-->
+        <attr name="topbarLeftMode" format="enum">
+            <enum name="back" value="0"/>
+            <enum name="more" value="1"/>
+        </attr>
+
+        <!--左侧控件的类型-->
+        <attr name="topbarLeftType" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="img" value="1"/>
+            <enum name="text" value="2"/>
+            <enum name="img_text" value="4"/>
+        </attr>
+
+        <!--中间标题控件的类型-->
+        <attr name="topbarTitleType" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="img" value="1"/>
+            <enum name="text" value="2"/>
+            <enum name="anim" value="3"/>
+
+        </attr>
+        <attr name="topbarTitleImage" format="reference"/>
+
+
+        <!--右侧控件的类型-->
+        <attr name="topbarRightType" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="img" value="1"/>
+            <enum name="text" value="2"/>
+            <enum name="img_text" value="4"/>
+        </attr>
+
+        <!--左侧区域图片-->
+        <attr name="topbarLeftImage" format="reference"/>
+        <!--左侧区域文字-->
+        <attr name="topbarLeftText" format="reference|string"/>
+
+        <!--标题文字-->
+        <attr name="topbarTitleText" format="reference|string"/>
+
+        <!--右侧区域图片-->
+        <attr name="topbarRightImage" format="reference"/>
+        <!--右侧区域文字-->
+        <attr name="topbarRightText" format="reference|string"/>
+        <!--是否显示底部分割线-->
+        <attr name="isShowTopbarDivider" format="boolean"/>
+            <!--底部分割线颜色-->
+        <attr name="topbarDividerColor" format="color|reference"/>
+
+    </declare-styleable>
+
+
+</resources>

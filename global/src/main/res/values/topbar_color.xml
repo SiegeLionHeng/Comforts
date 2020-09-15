@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Topbar Colors-->
+    <color name="topbar_background">@color/colorPrimary</color>
+    <color name="main_text_color">@color/black_text</color>
+</resources>

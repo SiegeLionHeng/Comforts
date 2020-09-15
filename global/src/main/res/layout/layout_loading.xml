@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loading_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!--    <ProgressBar-->
+    <!--        style="@style/Widget.AppCompat.ProgressBar"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerInParent="true" />-->
+
+    <com.zyao89.view.zloading.ZLoadingView
+        android:id="@+id/zlv_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:z_color="#000000"
+        app:z_type="MusicPathBuilder" />
+
+    <com.zyao89.view.zloading.ZLoadingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zlv_view"
+        android:layout_centerHorizontal="true"
+        app:z_color="#000000"
+        app:z_text="正在刷新中..."
+        app:z_type="TextBuilder" />
+
+</RelativeLayout>

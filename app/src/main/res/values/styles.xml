@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="PhotoDialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/black</item><!--背景颜色-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+
+    <style name="FragmentDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_photo_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_photo_out</item>
+    </style>
+
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="MatchWrap.TopBar">
+        <item name="android:id">@id/topbar</item>
+        <item name="topbarBgColor">@color/transparent</item>
+        <item name="topbarTextColor">@color/main_text_color</item>
+        <item name="topbarIsExtendStatusBar">true</item>
+        <item name="topbarLeftImage">@drawable/back_black</item>
+        <item name="topbarLeftType">img</item>
+        <item name="topbarLeftMode">back</item>
+        <item name="topbarRightType">none</item>
+        <item name="statusBarAsTopbarBg">false</item>
+        <item name="statusBarBg">@color/transparent</item>
+        <item name="isShowTopbarDivider">false</item>
+        <item name="topbarDividerColor">@color/color_d8d8d8</item>
+        <item name="topbarRightTextColor">@color/colorPrimary</item>
+        <item name="topbarLeftTextColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="style_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:layout_marginStart">@dimen/dp_15</item>
+        <item name="android:layout_marginEnd">@dimen/dp_15</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+</resources>

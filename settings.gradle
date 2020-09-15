@@ -1,0 +1,4 @@
+include ':JVPlayer'
+rootProject.name='Comfort'
+include ':app'
+include ':global'

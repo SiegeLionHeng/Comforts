@@ -1,0 +1,99 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly rootProject.ext.dependencies["appcompat-v7"]
+    compileOnly rootProject.ext.dependencies["annotations"]
+    compileOnly rootProject.ext.dependencies["support-v4"]
+    api(rootProject.ext.dependencies["design"]) {
+        exclude module: 'support-annotations'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-v4'
+        exclude module: 'recyclerview-v7'
+    }
+
+    api(rootProject.ext.dependencies["cardview-v7"]) {
+        exclude module: 'support-annotations'
+    }
+    api rootProject.ext.dependencies["okhttp3"]
+    // 图片加载框架
+    api rootProject.ext.dependencies["glide"]
+    annotationProcessor(rootProject.ext.dependencies["glide-compiler"]) {
+        exclude module: 'jsr305'
+    }
+    // 消息传递
+    api rootProject.ext.dependencies["androideventbus"]
+    api rootProject.ext.dependencies["live-event-bus"]
+    // Rx相关
+    api rootProject.ext.dependencies["rxjava2"]
+    api rootProject.ext.dependencies["rxandroid2"]
+    api rootProject.ext.dependencies["rxpermissions2"]
+    // 网络请求
+    api rootProject.ext.dependencies["okgo"]
+    api rootProject.ext.dependencies["okrx"]
+    api rootProject.ext.dependencies["okserver"]
+    // 解析
+    api rootProject.ext.dependencies["fastjson"]
+    // Dialog框架
+    api rootProject.ext.dependencies["zloading"]
+    // 视图反馈框架
+    api rootProject.ext.dependencies["loadsir"]
+    // 工具类框架
+    api rootProject.ext.dependencies["utilcodex"]
+    // 热修复框架
+    api rootProject.ext.dependencies["boost_multidex"]
+    // MVVM生命周期框架
+    api rootProject.ext.dependencies["lifecycle-viewmodel"]
+    api rootProject.ext.dependencies["lifecycle-livedata"]
+    // 阿里
+    api rootProject.ext.dependencies["arouter"]
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+    // 数据库
+    api rootProject.ext.dependencies["objectbox"]
+    // 下拉刷新框架
+    api rootProject.ext.dependencies["smart-refresh-layout"]
+    api rootProject.ext.dependencies["smart-refresh-header"]
+    // 框架
+    api rootProject.ext.dependencies["multitype"]
+    api rootProject.ext.dependencies["chrisbanes_photoview"]
+    api rootProject.ext.dependencies["magicindicator"]
+    // pdf加载插件
+    api rootProject.ext.dependencies["pdfviewer"]
+
+}

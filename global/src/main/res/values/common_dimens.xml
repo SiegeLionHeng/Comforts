@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="topbar_height">38dp</dimen>
+    <dimen name="topbar_spacing">16dp</dimen>
+
+</resources>

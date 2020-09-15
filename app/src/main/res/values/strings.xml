@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Comfort</string>
+    <string name="str_personal_center">个人中心</string>
+    <string name="str_mine_signature">这家伙很懒，什么都没有写~</string>
+    <string name="str_video_wallparper">秀出你的收藏~亮出你的宝藏\n独有的资源偷偷送给你哦\n只是因为很爱很爱大家啊~别忘了分享给大家哦</string>
+    <string name="str_pic">图集</string>
+    <string name="str_video">视频</string>
+    <string name="str_square">广场</string>
+    <string name="str_search">搜索话题/帖子/用户</string>
+    <string name="tv_make_friends_content">处对象 | 扩列 | 一起玩游戏</string>
+    <string name="str_make_friends">交朋友</string>
+
+    <string-array name="str_array">
+        <item>图集1</item>
+        <item>图集2</item>
+        <item>图集3</item>
+        <item>图集4</item>
+        <item>图集5</item>
+        <item>图集6</item>
+        <item>图集7</item>
+    </string-array>
+
+
+</resources>

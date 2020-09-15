@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.outrank.global.base.refresh.CommonRefreshView
+            android:id="@+id/srl_wall_paper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableLoadMore="true"
+            app:srlEnableRefresh="false">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_f4f4f4"
+                android:overScrollMode="never" />
+
+        </com.outrank.global.base.refresh.CommonRefreshView>
+
+    </RelativeLayout>
+</layout>
